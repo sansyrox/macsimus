@@ -152,3 +152,4 @@ To use **vim-gists** you will need to configure the following:
 git config --global github.user <username>
 ```
 
+

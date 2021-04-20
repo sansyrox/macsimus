@@ -4,8 +4,7 @@ set -o nounset # error when referencing undefined variable
 set -o errexit # exit when command fails
 
 installNeoVimMac() {
-	brew unlink luajit
-	brew install luajit --HEAD
+	brew install lua
 	brew install neovim --HEAD
 }
 

@@ -22,7 +22,7 @@ The following will install this config if you have an existing config it will mo
 This script only supports Mac, Ubuntu and Arch
 
 ```
-bash <(curl -s https://raw.githubusercontent.com/sansyrox/macsimus/master/utils/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/sansyrox/macsimus/main/utils/install.sh)
 ```
 
 ## Install Neovim

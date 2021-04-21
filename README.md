@@ -172,6 +172,10 @@ I use a custom NERD Patched DankMono Font. But if that is a little expensive for
 
 - Replace NerdTREE with FERN due to the speed in large projects
 
+## Common Issues
+
+If markdown preview is not working, try doing `:call mkdp#util#install()`
+
 ## Contributing Guidelines
 
 Coming Soon...

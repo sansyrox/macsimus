@@ -2,6 +2,14 @@
 
 It is highly modified version of neovim optimised for the most productive workflow.
 
+## ScreenShots
+
+![Preview of Macsimus](./imajges/preview.png)
+
+## Demo Video
+
+Coming Soon
+
 ## Why the name?
 
 I am glad you asked. Macsimus = e(macs) + v(im) + us.
@@ -163,3 +171,7 @@ I use a custom NERD Patched DankMono Font. But if that is a little expensive for
 ## ToDo
 
 - Replace NerdTREE with FERN due to the speed in large projects
+
+## Contributing Guidelines
+
+Coming Soon...

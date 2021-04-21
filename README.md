@@ -4,7 +4,7 @@ It is highly modified version of neovim optimised for the most productive workfl
 
 ## ScreenShots
 
-![Preview of Macsimus](./imajges/preview.png)
+![Preview of Macsimus](./images/preview.png)
 
 ## Demo Video
 

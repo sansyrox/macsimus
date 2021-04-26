@@ -18,7 +18,6 @@ let g:coc_global_extensions = [
   \ 'coc-emoji',
   \ 'coc-yaml',
   \ 'coc-pyright',
-  \ 'coc-explorer',
   \ 'coc-svg',
   \ 'coc-prettier',
   \ 'coc-vimlsp',

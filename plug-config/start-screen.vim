@@ -1,6 +1,7 @@
                                              
                                              
 
+                                      
 let g:startify_custom_header = [
         \'  __  __                _                     ',
         \' |  \/  |              (_)                    ',
@@ -10,7 +11,7 @@ let g:startify_custom_header = [
         \" |_|  |_|\\__,_|\\___|___/_|_| |_| |_|\\__,_|___/",
         \"                      By sansyrox a.k.a TLS(The Leader Supreme)",
         \]
-                                      
+
 let g:startify_session_dir = '~/.config/nvim/session'
 
 

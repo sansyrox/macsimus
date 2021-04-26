@@ -1,5 +1,20 @@
 # Macsimus
 
+It is highly modified version of neovim optimised for the most productive workflow.
+
+## ScreenShots
+
+![Preview of Macsimus](./images/preview.png)
+
+## Demo Video
+
+Coming Soon
+
+## Why the name?
+
+I am glad you asked. Macsimus = e(macs) + v(im) + us.
+The editor takes inspiration from the best features of emacs and vim and is made for us.
+
 ## Install in one command
 
 The following will install this config if you have an existing config it will move it to `~/.config/nvim.old`
@@ -7,7 +22,7 @@ The following will install this config if you have an existing config it will mo
 This script only supports Mac, Ubuntu and Arch
 
 ```
-bash <(curl -s https://raw.githubusercontent.com/sansyrox/macsimus/master/utils/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/sansyrox/macsimus/main/utils/install.sh)
 ```
 
 ## Install Neovim
@@ -97,9 +112,6 @@ let g:node_host_prog = expand("~/.nvm/versions/node/v12.16.1/bin/neovim-node-hos
 - ranger
 - ueberzug
 - ripgrep
-- silver_searcher
-- fd
-- universal-ctags
 - lazy git
 - lazy docker
 
@@ -152,4 +164,19 @@ To use **vim-gists** you will need to configure the following:
 git config --global github.user <username>
 ```
 
+## Font To Use
 
+I use a custom NERD Patched DankMono Font. But if that is a little expensive for you, FiraCode also works well with the theme.
+
+## ToDo
+
+- Replace NerdTREE with FERN due to the speed in large projects
+- Try integrating Telescope.nvim
+
+## Common Issues
+
+If markdown preview is not working, try doing `:call mkdp#util#install()`
+
+## Contributing Guidelines
+
+Coming Soon...

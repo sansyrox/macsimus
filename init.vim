@@ -9,10 +9,10 @@
 if !exists('g:vscode')
   source $HOME/.config/nvim/plug-config/polyglot.vim
 endif
-source $HOME/.config/nvim/vim-plug/plugins.vim
-source $HOME/.config/nvim/general/settings.vim
-source $HOME/.config/nvim/general/functions.vim
-source $HOME/.config/nvim/keys/mappings.vim
+  source $HOME/.config/nvim/general/settings.vim
+  source $HOME/.config/nvim/general/functions.vim
+  source $HOME/.config/nvim/keys/mappings.vim
+  source $HOME/.config/nvim/vim-plug/plugins.vim
 
 
   " Themes
@@ -51,13 +51,14 @@ source $HOME/.config/nvim/keys/mappings.vim
   luafile $HOME/.config/nvim/lua/plug-colorizer.lua
   source $HOME/.config/nvim/plug-config/vimspector.vim
   source $HOME/.config/nvim/plug-config/auto_config.vim
-  " source $HOME/.config/nvim/plug-config/sneak.vim
+  source $HOME/.config/nvim/plug-config/sneak.vim
   source $HOME/.config/nvim/plug-config/rainbow.vim
   " source $HOME/.config/nvim/plug-config/illuminate.vim
   " source $HOME/.config/nvim/plug-config/vista.vim
-  " source $HOME/.config/nvim/plug-config/xtabline.vim
+  source $HOME/.config/nvim/plug-config/xtabline.vim
   " source $HOME/.config/nvim/plug-config/ale.vim
-source $HOME/.config/nvim/plug-config/quickscope.vim
+  source $HOME/.config/nvim/plug-config/quickscope.vim
+  source $HOME/.config/nvim/syntax/scss.vim
 
 " Add paths to node and python here
 if !empty(glob("~/.config/nvim/paths.vim"))

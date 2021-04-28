@@ -1,4 +1,3 @@
-preview.png vim-plug
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -128,6 +127,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'maxmellon/vim-jsx-pretty'
     " Plug 'jelera/vim-javascript-syntax'
     " Plugin Graveyard
+    " SCSS
+Plug 'JulesWang/css.vim' " only necessary if your Vim version < 7.4
+Plug 'cakebaker/scss-syntax.vim'
 
     " Debug
     " Plug 'mfussenegger/nvim-dap'

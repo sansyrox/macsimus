@@ -1,5 +1,7 @@
 # Macsimus
 
+<!-- Place this tag where you want the button to render. -->
+
 It is highly modified version of neovim optimised for the most productive workflow.
 
 ## ScreenShots
@@ -178,4 +180,21 @@ If markdown preview is not working, try doing `:call mkdp#util#install()`
 
 ## Contributing Guidelines
 
-Coming Soon...
+This project is a very contribution friendly project. All sorts of contributions are public and are licenced under GPL3 licence.
+Being said that, I am announcing myself as the T.L.S(The Leader Supreme) of this project.
+
+### What does that mean?
+
+I am open to all kinds of discussions but I hold the veto to block/stop them when I feel like they are not adding any value.
+
+### Why not a democratic approach(like all my other OSS projects)?
+
+Since this project is very deep integrated with my work flow, I will not accept any request that makes this project slower or makes it even a little unusable for me.
+However, if you think that there is something that will improve this project feel free to open a PR without any hesitation.
+
+### What if someone does not agree with this approach?
+
+Read this [line](https://github.com/sansyrox/macsimus#what-does-that-mean) again :)
+
+I hope you all enjoy the project. Show some appreciation by
+<a class="github-button" href="https://github.com/sansyrox/macsimus" data-icon="octicon-star" aria-label="Star sansyrox/macsimus on GitHub">starring ⭐</a> the project?

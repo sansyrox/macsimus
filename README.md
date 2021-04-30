@@ -170,7 +170,6 @@ I use a custom NERD Patched DankMono Font. But if that is a little expensive for
 
 ## ToDo
 
-- Replace NerdTREE with FERN due to the speed in large projects
 - Try integrating Telescope.nvim
 
 ## Common Issues

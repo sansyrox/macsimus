@@ -13,6 +13,7 @@ endif
   source $HOME/.config/nvim/general/functions.vim
   source $HOME/.config/nvim/keys/mappings.vim
   source $HOME/.config/nvim/vim-plug/plugins.vim
+  source $HOME/.config/nvim/syntax/scss.vim
 
 
   " Themes
@@ -58,7 +59,7 @@ endif
   source $HOME/.config/nvim/plug-config/xtabline.vim
   " source $HOME/.config/nvim/plug-config/ale.vim
   source $HOME/.config/nvim/plug-config/quickscope.vim
-  source $HOME/.config/nvim/syntax/scss.vim
+  source $HOME/.config/nvim/plug-config/fern.vim
 
 " Add paths to node and python here
 if !empty(glob("~/.config/nvim/paths.vim"))

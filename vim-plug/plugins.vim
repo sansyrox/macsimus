@@ -8,7 +8,6 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
     " Better Syntax
     Plug 'haishanh/night-owl.vim'
-    Plug 'preservim/nerdtree'
     Plug 'tpope/vim-surround'
     Plug 'wellle/targets.vim'
     " Better Comments
@@ -35,11 +34,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
     " Treesitter
-    Plug 'nvim-treesitter/nvim-treesitter'
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'nvim-treesitter/playground'
     " Cool Icons
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'ryanoasis/vim-devicons'
+    Plug 'lambdalisue/nerdfont.vim'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
     " Closetags
@@ -128,9 +128,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'jelera/vim-javascript-syntax'
     " Plugin Graveyard
     " SCSS
-Plug 'JulesWang/css.vim' " only necessary if your Vim version < 7.4
-Plug 'cakebaker/scss-syntax.vim'
+    Plug 'JulesWang/css.vim' " only necessary if your Vim version < 7.4
+    Plug 'cakebaker/scss-syntax.vim'
 
+    " FERN File Tree
+    Plug 'lambdalisue/fern.vim'
+    Plug 'lambdalisue/fern-renderer-nerdfont.vim'
+    Plug 'lambdalisue/fern-renderer-devicons.vim'
     " Debug
     " Plug 'mfussenegger/nvim-dap'
     " Plug 'nvim-dap-virtual-text'
@@ -166,7 +170,7 @@ Plug 'cakebaker/scss-syntax.vim'
     " Making stuff
     " Plug 'neomake/neomake'
     " Plug 'mhinz/vim-signify'
-    " Plug 'preservim/nerdcommenter'
+    Plug 'preservim/nerdcommenter'
     " Plug 'brooth/far.vim'
     " Plug 'atishay/far.vim'
     " Plug 'romgrk/lib.kom'

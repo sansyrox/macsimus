@@ -135,6 +135,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'lambdalisue/fern.vim'
     Plug 'lambdalisue/fern-renderer-nerdfont.vim'
     Plug 'lambdalisue/fern-renderer-devicons.vim'
+
+    " Rust
+    Plug 'rust-lang/rust.vim'
     " Debug
     " Plug 'mfussenegger/nvim-dap'
     " Plug 'nvim-dap-virtual-text'

@@ -56,7 +56,37 @@ let g:which_key_map['W'] = [ ':call WindowSwap#EasyWindowSwap()'               ,
 let g:which_key_map['z'] = [ 'Goyo'                                            , 'zen' ]
 let g:which_key_map['c'] = [ ':Bdelete'                                            , 'Close buffer' ]
 
+function! Split_in_windows_to_side()
+      :vsplit | wincmd l | term
+      :split | term
+      :split | term
+      :vertical resize 50
+endfunction
+
+function! Split_in_windows_to_bottom()
+      :split | wincmd j | term
+      :vsplit | term
+      :vsplit | term
+      :res 12
+endfunction
+
+function! DeleteTerminalWindows()
+  " map of ther function name and filter them out
+  " regex in double quotes "term*"
+  let buffers = filter(range(1, bufnr('$')), 'buflisted(v:val) && bufname(v:val) =~ "term*"')
+  if empty(buffers) |throw "no *.".a:ext." buffer" | endif
+  :echo (buffers)
+  exe 'bd! '.join(buffers, ' ')
+endfunction
+
+
+
 " Group mappings
+let g:which_key_map.i = {
+      \'b' :[ ':call Split_in_windows_to_bottom()', 'to the bottom' ],
+      \'l' :[ ':call Split_in_windows_to_side()', 'split to the right side' ],
+      \'c' :[ ':call DeleteTerminalWindows()', 'close the terminal window' ],
+      \}
 
 " a is for actions
 let g:which_key_map.a = {

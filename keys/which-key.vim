@@ -57,13 +57,17 @@ let g:which_key_map['z'] = [ 'Goyo'                                            ,
 let g:which_key_map['c'] = [ ':Bdelete'                                            , 'Close buffer' ]
 
 function! Split_in_windows_to_side()
+      :100wincmd h
+      :100wincmd k
       :vsplit | wincmd l | term
       :split | term
       :split | term
-      :vertical resize 50
+      :vertical resize 10
 endfunction
 
 function! Split_in_windows_to_bottom()
+      :100wincmd h
+      :100wincmd k
       :split | wincmd j | term
       :vsplit | term
       :vsplit | term

@@ -109,7 +109,31 @@ asktoinstallpip() {
 
 installonmac() {
 	brew install ripgrep fzf ranger
+	git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
 	#npm install -g tree-sitter-cli
+	rangerConfigOnMac
+}
+
+rangerConfigOnOthers() {
+	sed 's/set\ preview_images\ false/set\ preview_images\ true/g' $HOME/.config/ranger/rc.conf
+	sed 's/set\ preview_images_method\ w3m/set\ preview_images_method\ ueberzug/g' $HOME/.config/ranger/rc.conf
+	sed 's/set\ draw_borders\ false/set\ draw_borders\ true/g' $HOME/.config/ranger/rc.conf
+	git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+	echo "default_linemode devicons" >> $HOME/.config/ranger/rc.conf
+}
+
+rangerConfigOnMac() {
+	sed 's/set\ preview_images\ false/set\ preview_images\ true/g' $HOME/.config/ranger/rc.conf
+	sed 's/set\ preview_images_method\ w3m/set\ preview_images_method\ iterm2/g' $HOME/.config/ranger/rc.conf
+	sed 's/set\ draw_borders\ false/set\ draw_borders\ true/g' $HOME/.config/ranger/rc.conf
+	git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+	echo "default_linemode devicons" >> $HOME/.config/ranger/rc.conf
+}
+
+rangerConfig() {
+	if [ "$(uname)" == "Darwin" ]; then; rangerConfigOnMac
+	else; rangerConfigOnOthers
+	fi
 }
 
 pipinstallueberzug() {
@@ -122,6 +146,7 @@ installonubuntu() {
 	pip3 install ueberzug
 	pip3 install neovim-remote
 	npm install -g tree-sitter-cli
+	rangerConfigOnOthers
 }
 
 installonarch() {
@@ -129,12 +154,14 @@ installonarch() {
 	which yay >/dev/null && yay -S python-ueberzug-git || pipinstallueberzug
 	pip3 install neovim-remote
 	npm install -g tree-sitter-cli
+	rangerConfigOnOthers
 }
 
 installonfedora() {
     sudo dnf groupinstall "X Software Development"
     sudo dnf install -y fzf ripgrep ranger
     pip3 install wheel ueberzug
+		rangerConfigOnOthers
 }
 
 installextrapackages() {

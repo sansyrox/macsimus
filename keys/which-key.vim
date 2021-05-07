@@ -87,8 +87,9 @@ endfunction
 
 " Group mappings
 let g:which_key_map.i = {
-      \'b' :[ ':call Split_in_windows_to_bottom()', 'to the bottom' ],
-      \'l' :[ ':call Split_in_windows_to_side()', 'split to the right side' ],
+      \'name': '+idemode',
+      \'b' :[ ':call Split_in_windows_to_bottom()', 'open terminals to the bottom' ],
+      \'l' :[ ':call Split_in_windows_to_side()', 'open terminals to the right side' ],
       \'c' :[ ':call DeleteTerminalWindows()', 'close the terminal window' ],
       \}
 
@@ -363,7 +364,7 @@ let g:which_key_map.l = {
 
 " t is for terminal
 let g:which_key_map.t = {
-      \ 'name' : '+terminal' ,
+      \ 'name' : '+floating terminal and inbuilt shizz' ,
       \ ';' : [':FloatermNew --wintype=normal --height=6'        , 'terminal'],
       \ 'f' : [':FloatermNew fzf'                               , 'fzf'],
       \ 'g' : [':FloatermNew lazygit'                           , 'git'],

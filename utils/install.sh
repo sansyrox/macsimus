@@ -20,7 +20,7 @@ installnodeubuntu() {
 }
 
 moveoldnvim() {
-	echo "Not installing LunarVim"
+	echo "Not installing Macsimus"
 	echo "Please move your ~/.config/nvim folder before installing"
 	exit
 }
@@ -82,7 +82,7 @@ installpacker() {
 }
 
 cloneconfig() {
-	echo "Cloning LunarVim configuration"
+	echo "Cloning Macsimus configuration"
 	git clone https://github.com/sansyrox/macsimus.git ~/.config/nvim
 	# mv $HOME/.config/nvim/init.lua $HOME/.config/nvim/init.lua.tmp
 	# mv $HOME/.config/nvim/utils/init.lua $HOME/.config/nvim/init.lua
@@ -143,6 +143,7 @@ installextrapackages() {
 	[ -f "/etc/arch-release" ] && installonarch
 	[ -f "/etc/fedora-release" ] && installonfedora
 	[ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ] && echo "Windows not currently supported"
+	pipinstallueberzug
 }
 
 # Welcome
@@ -178,7 +179,8 @@ else
 	# echo 'export PATH=$HOME/.config/nvcode/utils/bin:$PATH' >>~/.bashrc
 fi
 
-echo "I recommend you also install and activate a font from here: https://github.com/ryanoasis/nerd-fonts"
+echo "Installing supplementary packages"
+installextrapackages
 
 # echo "I also recommend you add 'set preview_images_method ueberzug' to ~/.config/ranger/rc.conf"
 

@@ -48,7 +48,7 @@ let g:which_key_map['h'] = [ '<C-W>s'                                          ,
 let g:which_key_map['n'] = [ ':let @/ = ""'                                    , 'no highlight' ]
 let g:which_key_map['o'] = [ ':RnvimrToggle'                                   , 'open' ]
 let g:which_key_map['p'] = [ ':Files'                                          , 'search files' ]
-" let g:which_key_map['q'] = [ '<Plug>(coc-fix-current)'                         , 'quickfix' ]
+let g:which_key_map['F'] = [ '<Plug>(coc-fix-current)'                         , 'quickfix' ]
 let g:which_key_map['T'] = [ ':TSHighlightCapturesUnderCursor'                 , 'treesitter highlight' ]
 let g:which_key_map['u'] = [ ':UndotreeToggle'                                 , 'undo tree']
 let g:which_key_map['v'] = [ '<C-W>v'                                          , 'split right']
@@ -370,7 +370,6 @@ let g:which_key_map.t = {
       \ 'g' : [':FloatermNew lazygit'                           , 'git'],
       \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
       \ 'n' : [':FloatermNew node'                              , 'node'],
-      \ 'N' : [':FloatermNew nnn'                               , 'nnn'],
       \ 'p' : [':FloatermNew python'                            , 'python'],
       \ 'm' : [':FloatermNew lazynpm'                           , 'npm'],
       \ 'r' : [':FloatermNew ranger'                            , 'ranger'],

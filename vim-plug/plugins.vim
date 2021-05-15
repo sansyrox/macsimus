@@ -63,6 +63,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'rhysd/git-messenger.vim'
     " Terminal
     Plug 'voldikss/vim-floaterm'
+    " For allowing password Input
+    Plug 'lambdalisue/suda.vim'
     " Start Screen
     Plug 'mhinz/vim-startify'
     " Vista
@@ -72,7 +74,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Zen mode
     Plug 'junegunn/goyo.vim'
     " Snippets
+    Plug 'SirVer/ultisnips'
     Plug 'honza/vim-snippets'
+    Plug 'mlaursen/vim-react-snippets'
     Plug 'mattn/emmet-vim'
     " Interactive code
     Plug 'metakirby5/codi.vim'
@@ -118,6 +122,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sansyrox/emacs_bindings.vim'
     " Better copy paste
     Plug 'sansyrox/better-cut-copy-paste.vim'
+    " VirtualEnv Vim
+    Plug 'sansyrox/vim-python-virtualenv'
     " Better Grepping
     Plug 'qalshidi/vim-bettergrep'
     " Multiple Cursors
@@ -138,6 +144,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Rust
     Plug 'rust-lang/rust.vim'
+    " Large File feature disable
+    
+    Plug 'vim-scripts/LargeFile'
     " Debug
     " Plug 'mfussenegger/nvim-dap'
     " Plug 'nvim-dap-virtual-text'
@@ -187,3 +196,5 @@ autocmd VimEnter *
   \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \|   PlugInstall --sync | q
   \| endif
+
+let g:LargeFile=0.8

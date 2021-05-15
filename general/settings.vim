@@ -37,6 +37,8 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set incsearch
 set guifont=JetBrainsMono\ Nerd\ Font
 
+set exrc                                " allows loading of local rc files
+set secure                              " disallows the use of :autocmd, shell and write commands in local .vimrc files.
 " New stuff
 " set notimeout nottimeout
 " set scrolloff=1
@@ -45,9 +47,9 @@ set guifont=JetBrainsMono\ Nerd\ Font
 " set display+=lastline
 " set backspace=eol,start,indent
 " set nostartofline
-" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 " set mmp=1300
-" set autochdir                           " Your working directory will always be the same as your working directory
+set autochdir                           " Your working directory will always be the same as your working directory
 " set foldcolumn=2                        " Folding abilities
 
 " au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC

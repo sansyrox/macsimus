@@ -60,6 +60,7 @@ endif
   source $HOME/.config/nvim/plug-config/ale.vim
   source $HOME/.config/nvim/plug-config/quickscope.vim
   source $HOME/.config/nvim/plug-config/fern.vim
+  source $HOME/.config/nvim/plug-config/suda.vim
 
 " Add paths to node and python here
 if !empty(glob("~/.config/nvim/paths.vim"))
@@ -84,3 +85,5 @@ if !g:is_nvim && g:is_vim8
     \ runtimepath+=~/.local/share/nvim/site/after runtimepath+=~/.vim/after
   let &packpath = &runtimepath
 endif
+
+let g:python3_host_prog='/usr/local/bin/python3'

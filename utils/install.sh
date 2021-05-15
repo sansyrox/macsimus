@@ -131,8 +131,11 @@ rangerConfigOnMac() {
 }
 
 rangerConfig() {
-	if [ "$(uname)" == "Darwin" ]; then; rangerConfigOnMac
-	else; rangerConfigOnOthers
+	if [ "$(uname)" == "Darwin" ]; 
+	then 
+		rangerConfigOnMac
+	else 
+		rangerConfigOnOthers
 	fi
 }
 

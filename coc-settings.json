@@ -63,7 +63,7 @@
   "coc.preferences.formatOnSaveFiletypes": [
     "scss",
     "css",
-    "markdown",
+    /* "markdown", */
     "javascript",
     "javascriptreact",
     "jsx",

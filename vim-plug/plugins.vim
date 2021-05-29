@@ -7,7 +7,9 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
     " Better Syntax
-    Plug 'haishanh/night-owl.vim'
+    " Plug 'haishanh/night-owl.vim'
+    Plug 'bluz71/vim-nightfly-guicolors'
+    Plug 'itchyny/lightline.vim'
     Plug 'tpope/vim-surround'
     Plug 'wellle/targets.vim'
     " Better Comments

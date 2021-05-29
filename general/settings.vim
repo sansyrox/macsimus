@@ -35,7 +35,7 @@ set updatetime=300                      " Faster completion
 set timeoutlen=100                      " By default timeoutlen is 1000 ms
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set incsearch
-set guifont=JetBrainsMono\ Nerd\ Font
+set guifont=DankMono\ Nerd\ Font\ Italic:h14
 
 set exrc                                " allows loading of local rc files
 set secure                              " disallows the use of :autocmd, shell and write commands in local .vimrc files.

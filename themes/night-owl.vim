@@ -8,7 +8,7 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 """"" enable the theme
 
 syntax enable
-colorscheme night-owl
+colorscheme nightfly
 
 " call s:HL('BufTabLineActive', s:colors.foreground, s:colors.background)  
 " call s:HL('BufTabLineHidden', s:colors.foreground, s:colors.background)  
@@ -17,4 +17,4 @@ colorscheme night-owl
 :hi TabLineSel ctermfg=Red ctermbg=Yellow
 :hi Title ctermfg=LightBlue ctermbg=Magenta
 
-let g:lightline = { 'colorscheme': 'nightowl' }
+let g:lightline = { 'colorscheme': 'nightfly' }

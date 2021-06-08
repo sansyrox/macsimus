@@ -169,6 +169,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'mg979/vim-xtabline'
     " Files
     Plug 'tpope/vim-eunuch'
+    Plug 'zefei/vim-wintabs'
+    Plug 'zefei/vim-wintabs-powerline'
+
     " Vim Wiki
     " Plug 'https://github.com/vimwiki/vimwiki.git'
     " Better Comments

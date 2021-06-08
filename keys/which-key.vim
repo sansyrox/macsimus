@@ -37,8 +37,9 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
 
+
 " Single mappings
-let g:which_key_map['q'] = [ ':q!'                                 , 'quit' ]
+let g:which_key_map['q'] = [ ':WintabsCloseWindow'                                 , 'quit' ]
 let g:which_key_map['/'] = [ ':call Comment()'                                 , 'comment' ]
 let g:which_key_map['.'] = [ ':e $MYVIMRC'                                     , 'open init' ]
 let g:which_key_map[';'] = [ ':Commands'                                       , 'commands' ]
@@ -54,7 +55,7 @@ let g:which_key_map['u'] = [ ':UndotreeToggle'                                 ,
 let g:which_key_map['v'] = [ '<C-W>v'                                          , 'split right']
 let g:which_key_map['W'] = [ ':call WindowSwap#EasyWindowSwap()'               , 'move window' ]
 let g:which_key_map['z'] = [ 'Goyo'                                            , 'zen' ]
-let g:which_key_map['c'] = [ ':Bdelete'                                            , 'Close buffer' ]
+let g:which_key_map['c'] = [ ':WintabsClose'                                            , 'Close buffer' ]
 
 function! Split_in_windows_to_side()
       :100wincmd h

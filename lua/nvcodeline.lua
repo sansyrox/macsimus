@@ -85,6 +85,7 @@ gls.left[2] = {
     highlight = {colors.grey,colors.bg,'bold'},
   },
 }
+
 -- gls.left[3] ={
 --   FileIcon = {
 --     separator = ' ',

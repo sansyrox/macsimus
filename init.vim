@@ -71,7 +71,6 @@ endif
 " inoremap <expr> <c-j> ("\<C-n>")
 " inoremap <expr> <c-k> ("\<C-p>")
 
-set rnu
 let g:vimspector_base_dir='/Users/sanskar/.config/nvim/vimspector-config'
 
 let g:is_nvim = has('nvim')

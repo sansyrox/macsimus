@@ -2,8 +2,14 @@
 
 'Space' key is the super key in Macsimus (to be used when not in any mode like insert or view)
 
+## General Navigation
 
-## General Navigation Keys
+1. j -> down
+2. k -> up
+3. h -> left
+4. l -> right
+
+## Navigation in Insert Mode
 
 1. ctrl + j -> down
 2. ctrl + k -> up
@@ -56,30 +62,25 @@ To set relational line numbering, first exit all modes using 'esc' key. Then, ty
 ``` 
 space + e
 ```
+    1.1. Split Screen from Explorer
+    v -> vertical split
+    h -> horizontal split
 
-2. Split Screen from Explorer
-v -> vertical split
-h -> horizontal split
-
-3. Navigating Between Splits <br>
+2. Navigating Between Splits (Normal Mode) <br>
 ctrl + h -> towards left <br>
 ctrl + l -> towards right <br>
 ctrl + w -> press w to move alternatively among all splits in cw direction
 ctrl + w + directional key -> to move directly to a split
 
-4. Closing Splits <br>
+3. Closing Splits <br>
 ctrl + q
 
-5. Opening a Terminal <br>
+4. Opening a Terminal <br>
 ```
 space + t + ;
 ```
 
-6. Opening a Python Shell <br>
+5. Opening a Python Shell <br>
 ```
 space + t + p
 ```
-
-
-
-

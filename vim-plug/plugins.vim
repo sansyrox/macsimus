@@ -6,7 +6,8 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
-    " Better Syntax
+
+" Better Syntax
     " Plug 'haishanh/night-owl.vim'
     Plug 'bluz71/vim-nightfly-guicolors'
     Plug 'itchyny/lightline.vim'
@@ -113,8 +114,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'szw/vim-maximizer'
     " Neovim in Browser
     Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(1) } }
-    " Rainbow brackets
-    Plug 'luochen1990/rainbow'
     " Async Linting Engine
     " TODO make sure to add ale config before plugin
     " Plug 'dense-analysis/ale'
@@ -128,7 +127,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sansyrox/vim-python-virtualenv'
     " Better Grepping
     Plug 'qalshidi/vim-bettergrep'
-    " Multiple Cursors
+    " Better Indent
+    Plug 'lukas-reineke/indent-blankline.nvim'
+    "" Multiple Cursors
     " TODO add this back in change from C-n
     " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
     " Plug 'yuezk/vim-js'
@@ -149,6 +150,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Large File feature disable
     
     Plug 'vim-scripts/LargeFile'
+    " Rainbow brackets
+    Plug 'p00f/nvim-ts-rainbow'
     " Debug
     " Plug 'mfussenegger/nvim-dap'
     " Plug 'nvim-dap-virtual-text'
@@ -194,7 +197,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'brooth/far.vim'
     " Debugging
 
-call plug#end()
+    call plug#end()
 
 " Automatically install missing plugins on startup
 autocmd VimEnter *

@@ -9,6 +9,8 @@
 if !exists('g:vscode')
   source $HOME/.config/nvim/plug-config/polyglot.vim
 endif
+  source $HOME/.config/nvim/plug-config/rainbow.vim
+
   source $HOME/.config/nvim/general/settings.vim
   source $HOME/.config/nvim/general/functions.vim
   source $HOME/.config/nvim/keys/mappings.vim
@@ -61,6 +63,8 @@ endif
   source $HOME/.config/nvim/plug-config/quickscope.vim
   source $HOME/.config/nvim/plug-config/fern.vim
   source $HOME/.config/nvim/plug-config/suda.vim
+    source $HOME/.config/nvim/plug-config/rainbow.vim
+
 
 " Add paths to node and python here
 if !empty(glob("~/.config/nvim/paths.vim"))

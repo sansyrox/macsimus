@@ -37,15 +37,22 @@ bash <(curl -s https://raw.githubusercontent.com/sansyrox/macsimus/main/utils/in
   brew upgrade neovim --fetch-HEAD # Sometimes you need to update
   ```
 
-- Ubuntu (tested on 20.04)
+- Ubuntu
 
+  Option 1
   ```
-  git clone https://github.com/neovim/neovim
-  cd neovim
-  make CMAKE_BUILD_TYPE=RelWithDebInfo
-  sudo make install
-  cd ~
-  sudo rm -rf neovim
+  sudo add-apt-repository ppa:neovim-ppa/unstable
+  sudo apt-get update
+  sudo apt-get install neovim
+  ```
+  
+  Option 2
+  ```
+  curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage -o /tmp/nvim.appimage
+
+  sudo mv /tmp/nvim.appimage /usr/local/bin/nvim
+
+  chmod +x /usr/local/bin/nvim
   ```
 
 - Arch

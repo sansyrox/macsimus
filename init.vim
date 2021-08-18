@@ -28,6 +28,7 @@ endif
   source $HOME/.config/nvim/plug-config/vim-commentary.vim
   source $HOME/.config/nvim/plug-config/rnvimr.vim
   source $HOME/.config/nvim/plug-config/better-whitespace.vim
+  source $HOME/.config/nvim/plug-config/bettergrep.vim
   source $HOME/.config/nvim/plug-config/fzf.vim
   source $HOME/.config/nvim/plug-config/codi.vim
   source $HOME/.config/nvim/plug-config/vim-wiki.vim
@@ -63,7 +64,8 @@ endif
   source $HOME/.config/nvim/plug-config/quickscope.vim
   source $HOME/.config/nvim/plug-config/fern.vim
   source $HOME/.config/nvim/plug-config/suda.vim
-    source $HOME/.config/nvim/plug-config/rainbow.vim
+  source $HOME/.config/nvim/plug-config/rainbow.vim
+  " source $HOME/.config/nvim/plug-config/dashboard.vim
 
 
 " Add paths to node and python here
@@ -75,7 +77,7 @@ endif
 " inoremap <expr> <c-j> ("\<C-n>")
 " inoremap <expr> <c-k> ("\<C-p>")
 
-let g:vimspector_base_dir='/Users/sanskar/.config/nvim/vimspector-config'
+" let g:vimspector_base_dir='/Users/bruhh/.config/nvim/vimspector-config'
 
 let g:is_nvim = has('nvim')
 let g:is_vim8 = v:version >= 800 ? 1 : 0
@@ -89,4 +91,5 @@ if !g:is_nvim && g:is_vim8
   let &packpath = &runtimepath
 endif
 
-let g:python3_host_prog='/usr/local/bin/python3'
+let g:python3_host_prog='/Users/bruhh/.pyenv/versions/macsimus/bin/python3'
+let g:python_host_prog='/Users/bruhh/.pyenv/versions/macsimus/bin/python'

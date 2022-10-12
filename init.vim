@@ -65,7 +65,8 @@ endif
   source $HOME/.config/nvim/plug-config/fern.vim
   source $HOME/.config/nvim/plug-config/suda.vim
   source $HOME/.config/nvim/plug-config/rainbow.vim
-  " source $HOME/.config/nvim/plug-config/dashboard.vim
+  source $HOME/.config/nvim/plug-config/nvim-dap-virtual-text.vim
+  source $HOME/.config/nvim/plug-config/glyph-palette.vim
 
 
 " Add paths to node and python here
@@ -91,5 +92,5 @@ if !g:is_nvim && g:is_vim8
   let &packpath = &runtimepath
 endif
 
-let g:python3_host_prog='/Users/bruhh/.pyenv/versions/macsimus/bin/python3'
-let g:python_host_prog='/Users/bruhh/.pyenv/versions/macsimus/bin/python'
+let g:python3_host_prog='/usr/local/bin/python3'
+let g:python_host_prog='/usr/bin/python'

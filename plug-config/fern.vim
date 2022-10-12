@@ -38,11 +38,12 @@ function! FernInit() abort
   nmap <buffer> d <Plug>(fern-action-remove)
   nmap <buffer> m <Plug>(fern-action-move)
   nmap <buffer> M <Plug>(fern-action-rename)
-  nmap <buffer> I <Plug>(fern-action-hidden-toggle)
+  nmap <buffer> I <Plug>(fern-action-hidden:toggle)
   nmap <buffer> R <Plug>(fern-action-reload)
   nmap <buffer> b <Plug>(fern-action-mark-toggle)
   nmap <buffer> s <Plug>(fern-action-open:split)
   nmap <buffer> v <Plug>(fern-action-open:vsplit)
+  nmap <buffer> T <Plug>(fern-action-open:tabedit)
   nmap <buffer><nowait> < <Plug>(fern-action-leave)
   nmap <buffer><nowait> > <Plug>(fern-action-enter)
 endfunction

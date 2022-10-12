@@ -13,6 +13,9 @@ endfunction
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
+
+" to autocomplete selection
+inoremap <C-.> <C-y>
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
 " position. Coc only does snippet and additional edit on confirm.
 if exists('*complete_info')

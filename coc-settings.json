@@ -53,7 +53,6 @@
   "java.referencesCodeLens.enabled": true,
   "java.implementationsCodeLens.enabled": true,
   "java.completion.enabled": true,
-  "java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok/lombok.jar",
 
   // list
   "list.indicator": ">",
@@ -64,16 +63,15 @@
     "scss",
     "css",
     /* "markdown", */
-    "javascript",
-    "javascriptreact",
-    "jsx",
-    "graphql",
-    "html",
-    "yaml",
-    "json",
-    "python",
-    "java",
-    "rust"
+    // "javascript",
+    // "javascriptreact",
+    // "jsx",
+    // "graphql",
+    // "html",
+    // "yaml",
+    // "json",
+    // "python",
+    // "rust"
   ],
 
   "coc.preferences.hoverTarget": "float",
@@ -161,7 +159,8 @@
   
   // rust
   "rust-analyzer.enable":true,
-  "rust-analyzer.server.path": "/home/sanskar/.local/bin/rust-analyzer"
+  "rust-analyzer.server.path": "/home/sanskar/.local/bin/rust-analyzer",
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/14.0.3/clangd_14.0.3/bin/clangd"
 
   // TODO b:coc_suggest_disable=1 GOYO
   // TODO add to paths.vim g:coc_node_path

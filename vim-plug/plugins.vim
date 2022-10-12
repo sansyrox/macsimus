@@ -148,6 +148,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'lambdalisue/fern.vim'
     Plug 'lambdalisue/fern-renderer-nerdfont.vim'
     Plug 'lambdalisue/fern-renderer-devicons.vim'
+    Plug 'lambdalisue/glyph-palette.vim'
+    Plug 'lambdalisue/fern-git-status.vim'
+    Plug 'lambdalisue/fern-mapping-git.vim'
+
 
     " Rust
     Plug 'rust-lang/rust.vim'
@@ -164,6 +168,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'zefei/vim-wintabs-powerline'
 
     Plug 'preservim/nerdcommenter'
+
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'windwp/nvim-spectre'
+    Plug 'mfussenegger/nvim-dap'
+    Plug 'theHamsta/nvim-dap-virtual-text'
+    Plug 'mfussenegger/nvim-dap-python'
+    Plug 'sindrets/diffview.nvim'
+    Plug 'rcarriga/nvim-dap-ui'
+    Plug 'christoomey/vim-tmux-navigator'
 
     call plug#end()
 

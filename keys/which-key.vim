@@ -141,7 +141,7 @@ let g:which_key_map.b = {
       \ }
 
 " d is for debug
-let g:which_key_map.d = {
+let g:which_key_map.D = {
       \ 'name' : '+debug' ,
       \ 'l' : [':call vimspector#Launch()<CR>'              , 'launch'],
       \ 'b' : ['<Plug>VimspectorToggleBreakpoint'              , 'breakpoint'],
@@ -353,7 +353,7 @@ let g:which_key_map.l = {
       \ 'q' : ['<Plug>(coc-fix-current)'             , 'quickfix'],
       \ 'r' : ['<Plug>(coc-references)'              , 'references'],
       \ 'R' : ['<Plug>(coc-rename)'                  , 'rename'],
-      \ 's' : [':CocList -I symbols'                 , 'references'],
+      \ 's' : [':CocList -I symbols'                 , 'symbols'],
       \ 'S' : [':CocList snippets'                   , 'snippets'],
       \ 't' : ['<Plug>(coc-type-definition)'         , 'type definition'],
       \ 'u' : [':CocListResume'                      , 'resume list'],

@@ -18,3 +18,14 @@ colorscheme nightfly
 :hi Title ctermfg=LightBlue ctermbg=Magenta
 
 let g:lightline = { 'colorscheme': 'nightfly' }
+
+let g:nightflyCursorColor = 1
+let g:nightflyNormalFloat = 1
+let g:nightflyTransparent = 1
+let g:nightflyUnderlineMatchParen = 1
+" Vimscript initialization file
+let g:nightflyWinSeparator = 2
+
+hi VertSplit ctermbg=NONE guibg=NONE
+set encoding=utf8
+

@@ -1,9 +1,11 @@
 # Macsimus Tutorials
 
+
 'Space' key is the super key in Macsimus (to be used when not in any mode like insert or view)
 
 ## General Navigation
 
+Normal Mode
 1. j -> down
 2. k -> up
 3. h -> left
@@ -15,6 +17,9 @@
 2. ctrl + k -> up
 3. ctrl + h -> left
 4. ctrl + l -> right
+5. ctrl + e -> end of line
+6. ctrl + w -> end of word
+7. ctrl + b -> starting of word
 
 ## Word-wise Navigation Keys
  
@@ -63,14 +68,14 @@ To set relational line numbering, first exit all modes using 'esc' key. Then, ty
 space + e
 ```
     1.1. Split Screen from Explorer
-    v -> vertical split
-    h -> horizontal split
+        v -> vertical split
+        s -> horizontal split
 
 2. Navigating Between Splits (Normal Mode) <br>
-ctrl + h -> towards left <br>
-ctrl + l -> towards right <br>
-ctrl + w -> press w to move alternatively among all splits in cw direction
-ctrl + w + directional key -> to move directly to a split
+- ctrl + h -> towards left <br>
+- ctrl + l -> towards right <br>
+- ctrl + w -> press w to move alternatively among all splits in cw direction
+- ctrl + w + directional key -> to move directly to a split
 
 3. Closing Splits <br>
 ctrl + q
@@ -83,4 +88,14 @@ space + t + ;
 5. Opening a Python Shell <br>
 ```
 space + t + p
+```
+
+6. Opening start screen
+```
+space + .
+```
+
+7. Commenting and Uncommenting a line
+```
+space + /
 ```

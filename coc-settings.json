@@ -160,7 +160,9 @@
   // rust
   "rust-analyzer.enable":true,
   "rust-analyzer.server.path": "/home/sanskar/.local/bin/rust-analyzer",
-  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/14.0.3/clangd_14.0.3/bin/clangd"
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/14.0.3/clangd_14.0.3/bin/clangd",
+  "git.addGBlameToVirtualText": true,
+
 
   // TODO b:coc_suggest_disable=1 GOYO
   // TODO add to paths.vim g:coc_node_path

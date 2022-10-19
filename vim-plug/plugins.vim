@@ -155,6 +155,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Rust
     Plug 'rust-lang/rust.vim'
+    Plug 'chipsenkbeil/distant.nvim'
+
     " Large File feature disable
     
     Plug 'vim-scripts/LargeFile'
@@ -177,6 +179,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sindrets/diffview.nvim'
     Plug 'rcarriga/nvim-dap-ui'
     Plug 'christoomey/vim-tmux-navigator'
+    Plug 'terryma/vim-multiple-cursors'
 
     call plug#end()
 

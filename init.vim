@@ -57,6 +57,7 @@ endif
   source $HOME/.config/nvim/plug-config/auto_config.vim
   source $HOME/.config/nvim/plug-config/sneak.vim
   source $HOME/.config/nvim/plug-config/rainbow.vim
+  source $HOME/.config/nvim/plug-config/wintab.vim
   " source $HOME/.config/nvim/plug-config/illuminate.vim
   " source $HOME/.config/nvim/plug-config/vista.vim
   source $HOME/.config/nvim/plug-config/xtabline.vim
@@ -94,3 +95,6 @@ endif
 
 let g:python3_host_prog='/usr/local/bin/python3'
 let g:python_host_prog='/usr/bin/python'
+hi NonText guifg=bg
+set fillchars+=vert:│
+

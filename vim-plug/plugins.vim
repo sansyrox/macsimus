@@ -91,7 +91,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " undo time travel
     Plug 'mbbill/undotree'
     " Find and replace
-    Plug 'ChristianChiarulli/far.vim'
+    Plug 'brooth/far.vim'
     " Auto change html tags
     Plug 'AndrewRadev/tagalong.vim'
     " live server
@@ -180,6 +180,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'rcarriga/nvim-dap-ui'
     Plug 'christoomey/vim-tmux-navigator'
     Plug 'terryma/vim-multiple-cursors'
+
+    " CoPilot
+    Plug 'github/copilot.vim'
+
+    " Crates version manager
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'saecki/crates.nvim', { 'tag': 'v0.4.0' }
 
     call plug#end()
 

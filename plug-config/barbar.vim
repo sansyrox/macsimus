@@ -4,7 +4,15 @@ let bufferline = {}
 let bufferline.shadow = v:true
 
 " Enable/disable icons
-let bufferline.icons = v:true
+let bufferline.icons = {
+  \ 'buffers': v:true,
+  \ 'buffer_icons': v:true,
+  \ 'tabpage_icons': v:true
+  \ }
+
+" Enable/disable full file path display
+let bufferline.auto_hide = v:false
+
 
 " Enables/disable clickable tabs
 "  - left-click: go to buffer

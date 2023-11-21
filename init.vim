@@ -58,6 +58,7 @@ endif
   source $HOME/.config/nvim/plug-config/sneak.vim
   source $HOME/.config/nvim/plug-config/rainbow.vim
   source $HOME/.config/nvim/plug-config/wintab.vim
+  source $HOME/.config/nvim/plug-config/copilot.vim
   " source $HOME/.config/nvim/plug-config/illuminate.vim
   " source $HOME/.config/nvim/plug-config/vista.vim
   source $HOME/.config/nvim/plug-config/xtabline.vim
@@ -68,6 +69,8 @@ endif
   source $HOME/.config/nvim/plug-config/rainbow.vim
   source $HOME/.config/nvim/plug-config/nvim-dap-virtual-text.vim
   source $HOME/.config/nvim/plug-config/glyph-palette.vim
+  source $HOME/.config/nvim/plug-config/ultisnips.vim
+  lua require('crates').setup()
 
 
 " Add paths to node and python here
@@ -93,8 +96,10 @@ if !g:is_nvim && g:is_vim8
   let &packpath = &runtimepath
 endif
 
-let g:python3_host_prog='/usr/local/bin/python3'
-let g:python_host_prog='/usr/bin/python'
+let g:python3_host_prog='/Users/sanskar/.pyenv/shims/python3'
+let g:python_host_prog='/Users/sanskar/.pyenv/shims/python'
 hi NonText guifg=bg
 set fillchars+=vert:│
+set guicursor=i:ver1
 
+autocmd FileType python setlocal formatoptions+=o

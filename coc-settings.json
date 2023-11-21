@@ -63,18 +63,18 @@
     "scss",
     "css",
     /* "markdown", */
-    // "javascript",
-    // "javascriptreact",
-    // "jsx",
-    // "graphql",
-    // "html",
-    // "yaml",
-    // "json",
-    // "python",
-    // "rust"
+    "javascript",
+    "javascriptreact",
+    "jsx",
+    "graphql",
+    "html",
+    "yaml",
+    "json",
+    "python",
+    "rust"
   ],
 
-  "coc.preferences.hoverTarget": "float",
+  // "coc.preferences.hoverTarget": "float",
 
   // python config
   "pyright.enable": true,
@@ -123,26 +123,6 @@
   "scss.completion.completePropertyWithSemicolon": true,
   "scss.colorDecorators.enable": true,
 
-  // explorer
-  /* "explorer.width": 30, */
-  /* "explorer.file.root.template": "[icon] [git] [hidden & 1][root]", */
-  /* "explorer.icon.enableNerdfont": true, */
-  /* "explorer.previewAction.onHover": false, */
-  /* "explorer.icon.enableVimDevicons": false, */
-  /* "explorer.file.showHiddenFiles": false, */
-  /* "explorer.keyMappings.global": { */
-  /*   "<cr>": ["expandable?", "expand", "open"], */
-  /*   "v": "open:vsplit", */
-  /*   "x": "open: right" */
-  /* }, */
-
-  /* "languageserver": { */
-  /*   "lua": { */
-  /*     "command": "/home/chris/.luambenvs/neovim4/bin/lua-lsp", */
-  /*     "filetypes": ["lua"], */
-  /*     "trace.server": "verbose" */
-  /*   } */
-  /* }, */
 
   //coc-emoji
   "coc.source.emoji.filetypes": ["markdown"],
@@ -159,10 +139,9 @@
   
   // rust
   "rust-analyzer.enable":true,
-  "rust-analyzer.server.path": "/home/sanskar/.local/bin/rust-analyzer",
-  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/14.0.3/clangd_14.0.3/bin/clangd",
-  "git.addGBlameToVirtualText": true,
-
+  // "rust-analyzer.server.path": "/opt/homebrew/bin/rust-analyzer",
+  // "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/14.0.3/clangd_14.0.3/bin/clangd",
+  "git.addGBlameToVirtualText": true
 
   // TODO b:coc_suggest_disable=1 GOYO
   // TODO add to paths.vim g:coc_node_path

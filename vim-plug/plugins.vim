@@ -186,9 +186,29 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Crates version manager
     Plug 'nvim-lua/plenary.nvim'
+    Plug '~/repos/stafyre_syntax.nvim'
     Plug 'saecki/crates.nvim', { 'tag': 'v0.4.0' }
 
+    """ avante.nvim
+    " Deps
+    Plug 'stevearc/dressing.nvim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'MunifTanjim/nui.nvim'
+
+    " Optional deps
+    Plug 'nvim-tree/nvim-web-devicons' "or Plug 'echasnovski/mini.icons'
+    Plug 'HakonHarnes/img-clip.nvim'
+    Plug 'zbirenbaum/copilot.lua'
+
+    " Yay
+    " Plug 'yetone/avante.nvim', { 'branch': 'main', 'do': 'g:AvanteBuild', 'on': 'AvanteAsk' }
+    " https://github.com/yetone/avante.nvim/issues/453
+    " Plug 'yetone/avante.nvim', { 'branch': 'main', 'do': 'make' }
+    Plug 'yetone/avante.nvim', { 'branch': 'main', 'do': { -> avante#build('source=true') } }
+    set laststatus=3
+
     call plug#end()
+autocmd! User avante.nvim lua require('avante_lib').load()
 
 " Automatically install missing plugins on startup
 autocmd VimEnter *
